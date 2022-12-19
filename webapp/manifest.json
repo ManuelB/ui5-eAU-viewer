@@ -123,6 +123,11 @@
 					"pattern": "organizations",
 					"name": "organizationsRoute",
 					"target": "organizationsTarget"
+				},
+				{
+					"pattern": "encounters",
+					"name": "encountersRoute",
+					"target": "encountersTarget"
 				}
 			],
 			"targets": {
@@ -144,6 +149,11 @@
 				"organizationsTarget" :{
 					"viewName": "Organizations",
 					"viewId": "organizations",
+					"viewLevel": 2
+				},
+				"encountersTarget" :{
+					"viewName": "Encounters",
+					"viewId": "encounters",
 					"viewLevel": 2
 				}
 			}

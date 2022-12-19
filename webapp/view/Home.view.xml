@@ -12,6 +12,11 @@
 					<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
 				</TileContent>
 			</GenericTile>
+			<GenericTile id="myEncountersTile" binding="{/Encounter}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="My Encounters" press="onMyEncountersTilePress">
+				<TileContent unit="Encounters">
+					<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
+				</TileContent>
+			</GenericTile>
 		</content>
 		<footer>
 			<OverflowToolbar id="overflowToolbar">

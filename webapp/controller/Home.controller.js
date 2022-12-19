@@ -25,6 +25,12 @@ sap.ui.define([
 			this.oRouter.navTo("organizationsRoute");
 		},
 
+		onMyEncountersTilePress: function(oEvent) {
+			var iNumberOfEncounters = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
+			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("encountersTileInfo", [iNumberOfEncounters]));
+			this.oRouter.navTo("encountersRoute");
+		},
+
 		onMessagePopoverPress : function (oEvent) {
 			this._getMessagePopover().openBy(oEvent.getSource());
 		},

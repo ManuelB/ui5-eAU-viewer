@@ -17,7 +17,7 @@ sap.ui.define([
 			var aFilter = [];
 			var sQuery = oEvent.getParameter("query");
 			if (sQuery) {
-				aFilter.push(new Filter("FirstName", FilterOperator.Contains, sQuery));
+				aFilter.push(new Filter("name", FilterOperator.Contains, sQuery));
 			}
 
 			// filter binding

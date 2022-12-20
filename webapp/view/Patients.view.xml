@@ -1,14 +1,20 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="myhealthapp.controller.Patients"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+    controllerName="myhealthapp.controller.Patients"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
-		<Toolbar>
-			<Title text="Search for Patients here: "/>
-			<ToolbarSpacer />
-			<SearchField id="searchField" search=".onSearchEmployeesTable" width="50%"/>
-			<Button icon="sap-icon://sort" press=".onSortButtonPressed"/>
-		</Toolbar>
+			<Toolbar>
+				<Title text="Search for Patients here: "/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" search=".onSearchPatients" width="50%"/>
+				<Button icon="sap-icon://sort" press=".onSortButtonPressed"/>
+			</Toolbar>
 		<content>
-			<List id="patientsList" headerText="{i18n>patientsTitle}" items="{/Patient}" growing="true" growingScrollToLoad="true" growingThreshold="10" itemPress="onPressPatient">
+			<List id="patientsList" 
+			headerText="{i18n>patientsTitle}" 
+			items="{/Patient}" growing="true" 
+			growingScrollToLoad="true" 
+			growingThreshold="10" 
+			itemPress="onPressPatient">
                 <StandardListItem title="{name/[use=official]/family}" type="Navigation"/>
             </List>
 		</content>

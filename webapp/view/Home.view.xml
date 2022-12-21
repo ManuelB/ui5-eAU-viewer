@@ -7,16 +7,28 @@
 					<NumericContent value="{%total%}" icon="sap-icon://stethoscope"/>
 				</TileContent>
 			</GenericTile>
-			<GenericTile id="myOrganizationsTile" binding="{/Organization}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="My Organizations" press="onMyOrganzationsTilePress">
+			<GenericTile id="myOrganizationsTile" binding="{/Organization}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Health Organizations" press="onMyOrganzationsTilePress">
 				<TileContent unit="Organizations">
 					<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
 				</TileContent>
 			</GenericTile>
-			<GenericTile id="myEncountersTile" binding="{/Encounter}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="My Encounters" press="onMyEncountersTilePress">
+			<GenericTile id="myEncountersTile" binding="{/Encounter}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Patient Encounters" press="onMyEncountersTilePress">
 				<TileContent unit="Encounters">
 					<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
 				</TileContent>
 			</GenericTile>
+			<GenericTile id="myObservationsTile" binding="{/Observation}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Patient Observations" press="onMyObservationsTilePress">
+				<TileContent unit="Observations">
+					<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
+				</TileContent>
+			</GenericTile>
+			<VBox>
+				<Text text="" class="sapUiSmallMarginBottom" />
+				<Text text="" class="sapUiSmallMarginBottom" />
+				<Text text="" class="sapUiSmallMarginBottom" />
+				<Text text="" class="sapUiSmallMarginBottom" />
+				<Image src="../img/lgs.png" width="{300}" />
+			</VBox>
 		</content>
 		<footer>
 			<OverflowToolbar id="overflowToolbar">

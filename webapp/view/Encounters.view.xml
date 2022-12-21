@@ -14,7 +14,7 @@
 			growingScrollToLoad="true" 
 			growingThreshold="15" 
 			itemPress="onPressEncounter">
-                <StandardListItem title="{id}" type="Navigation"/>
+                <StandardListItem title="{location/0/location/display}" type="Navigation"/>
             </List>
 		</content>
 		<footer>

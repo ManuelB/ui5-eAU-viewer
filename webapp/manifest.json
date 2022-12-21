@@ -1,5 +1,5 @@
 {
-	"_version": "1.7.0",
+	"_version": "1.7.6",
 	"sap.app": {
 		"id": "myhealthapp",
 		"type": "application",
@@ -28,8 +28,14 @@
 	"sap.ui": {
 		"supportedThemes": [
 			"sap_hcb",
-			"sap_fiori_3"
-
+			"sap_fiori_3",
+			"sap_belize",
+			"sap_fiori_3_dark",
+			"sap_ux",
+			"sap_platinum",
+			"sap_bluecrystal",
+			"sap_goldreflection",
+			"sap_belize_hcb"
 		],
 		"technology": "UI5",
 		"deviceTypes": {
@@ -47,7 +53,7 @@
 			"async": true
 		},
 		"dependencies": {
-			"minUI5Version": "1.54.0",
+			"minUI5Version": "1.72.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},

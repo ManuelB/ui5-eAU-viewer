@@ -25,9 +25,7 @@
 			<VBox>
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
-				<Text text="" class="sapUiSmallMarginBottom" />
-				<Text text="" class="sapUiSmallMarginBottom" />
-				<Image src="../img/lgs.png" width="{300}" />
+				<Image src="../img/lgs_transpa.png" width="{300}" />
 			</VBox>
 		</content>
 		<footer>

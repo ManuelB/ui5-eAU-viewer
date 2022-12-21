@@ -1,9 +1,20 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="myhealthapp.controller.Encounters"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+    controllerName="myhealthapp.controller.Patients"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
+			<Toolbar>
+				<Title text="Search for a String in the patient's data here (loading time 30 sec.): "/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" search=".onSearchEncounters" width="50%"/>
+			</Toolbar>
 		<content>
-			<List id="encountersList" headerText="{i18n>encountersTitle}" items="{/Encounter}">
-                <StandardListItem title="{name}"/>
+			<List id="encountersList" 
+			headerText="{i18n>encountersTitle}" 
+			items="{/Encounter}" growing="true" 
+			growingScrollToLoad="true" 
+			growingThreshold="15" 
+			itemPress="onPressEncounter">
+                <StandardListItem title="{id}" type="Navigation"/>
             </List>
 		</content>
 		<footer>

@@ -10,9 +10,7 @@
 		<content>
 			<List id="encountersList" 
 			headerText="{i18n>encountersTitle}" 
-			items="{/Encounter}" growing="true" 
-			growingScrollToLoad="true" 
-			growingThreshold="15" 
+			items="{/Encounter}" 
 			itemPress="onPressEncounter">
                 <StandardListItem title="Reference: {location/0/location/reference} - Bed: {location/0/location/display}" type="Navigation"/>
             </List>

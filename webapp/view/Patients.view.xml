@@ -10,9 +10,7 @@
 		<content>
 			<List id="patientsList" 
 			headerText="{i18n>patientsTitle}" 
-			items="{/Patient}" growing="true" 
-			growingScrollToLoad="true" 
-			growingThreshold="15" 
+			items="{/Patient}" 
 			itemPress="onPressPatient">
                 <StandardListItem title="{name/[use=official]/family}" type="Navigation"/>
             </List>

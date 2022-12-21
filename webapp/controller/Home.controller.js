@@ -1,5 +1,6 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/IconPool"
 ], function(Controller) {
 	"use strict";
 
@@ -7,6 +8,10 @@ sap.ui.define([
 
 		onInit: function(){
 			this.initializeRouter();
+			var B = {
+				fontFamily: "BusinessSuiteInAppSymbols",
+				fontURI: sap.ui.require.toUrl("sap/ushell/themes/base/fonts/")
+			};
 		},
 
 		initializeRouter: function(){

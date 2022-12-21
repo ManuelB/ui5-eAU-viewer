@@ -37,7 +37,7 @@
                         icon="sap-icon://alert"
                         text="{=${messageModel>/}.length}"
                         press="onMessagePopoverPress" />
-            	<Label text="{i18n>homeFooterText}"/>
+            	<Label text="{i18n>homeFooterText}"/>				
 			</OverflowToolbar>
 		</footer>
 	</Page>

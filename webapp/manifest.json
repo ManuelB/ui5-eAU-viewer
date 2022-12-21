@@ -128,6 +128,11 @@
 					"pattern": "encounters",
 					"name": "encountersRoute",
 					"target": "encountersTarget"
+				},
+				{
+					"pattern": "observations",
+					"name": "observationsRoute",
+					"target": "observationsTarget"
 				}
 			],
 			"targets": {
@@ -154,6 +159,11 @@
 				"encountersTarget" :{
 					"viewName": "Encounters",
 					"viewId": "encounters",
+					"viewLevel": 2
+				},
+				"observationsTarget" :{
+					"viewName": "Observations",
+					"viewId": "observations",
 					"viewLevel": 2
 				}
 			}

@@ -19,7 +19,7 @@
 			growingTriggerText=" "
 			>
                 <StandardListItem 
-				title="Id: {id}" 
+				title="ID: {id}" 
 				description="Name: {name/[use=official]/given} {name/[use=official]/family}"
 				type="Navigation"/>
             </List>

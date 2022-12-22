@@ -5,8 +5,16 @@
 		<content>
 			<List id="organizationsList" 
 			headerText="{i18n>organizationsTitle}" 
-			items="{/Organization}">
-                <StandardListItem title="{name}"/>
+			items="{/Organization}"
+			growing="true"
+    		growingThreshold="7"
+    		growingScrollToLoad="false"
+			growingTriggerText=" "
+			>
+            	<StandardListItem
+      			title="ID: {id}"
+      			description="Organization: {name}"
+				/>
             </List>
 		</content>
 		<footer>

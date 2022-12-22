@@ -2,12 +2,30 @@
     controllerName="myhealthapp.controller.Observations"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
+<!--		<Toolbar>
+				<Title text="Search for a text in the observation's data here (loading time 30 sec.): "/>
+				<ToolbarSpacer />
+				<SearchField id="searchField" search=".onSearchObservations" width="50%"/>
+				
+	    </Toolbar>
+-->
 		<content>
-			<List id="observationsList" 
-			headerText="{i18n>observationsTitle}" 
-			items="{/Observation}">
-                <StandardListItem title="Id:{id} - Observation: {_history/1/valueString}"/>
-            </List>
+
+ <List
+ 	id="observationsList" 
+    items="{/Observation}"
+    headerText="{i18n>observationsTitle}" 
+    growing="true"
+    growingThreshold="7"
+    growingScrollToLoad="false"
+	growingTriggerText=" ">
+    <StandardListItem
+      title="ID: {id}"
+      description="Observation: {_history/1/valueString}"
+	/>
+  </List>
+
+
 		</content>
 		<footer>
 			<Toolbar>

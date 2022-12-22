@@ -7,14 +7,24 @@
 				<ToolbarSpacer />
 				<SearchField id="searchField" search=".onSearchPatients" width="50%"/>
 			</Toolbar>
+			<Text text="  You may search for patient names like 'Amy' or 'Sanchez' in the search box above" class="sapUiSmallMarginBottom" />
 		<content>
 			<List id="patientsList" 
 			headerText="{i18n>patientsTitle}" 
 			items="{/Patient}" 
-			itemPress="onPressPatient">
-                <StandardListItem title="Id:{id} - Name:{name/[use=official]/given} {name/[use=official]/family}" type="Navigation"/>
+			itemPress="onPressPatient"
+			growing="true"
+    		growingThreshold="6"
+    		growingScrollToLoad="false"
+			growingTriggerText=" "
+			>
+                <StandardListItem 
+				title="Id:{id}" 
+				description="Name:{name/[use=official]/given} {name/[use=official]/family}"
+				type="Navigation"/>
             </List>
 		</content>
+			<Text text="  When clicking on a patient record you can see more details, edit and save the data" />
 		<footer>
 			<Toolbar>
 				<Label text="{i18n>homeFooterText}"/>

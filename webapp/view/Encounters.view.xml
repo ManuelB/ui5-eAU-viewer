@@ -5,8 +5,16 @@
 		<content>
 			<List id="encountersList" 
 			headerText="{i18n>encountersTitle}" 
-			items="{/Encounter}">
-                <StandardListItem title="Reference: {location/0/location/reference} - Bed: {location/0/location/display}" type="Navigation"/>
+			items="{/Encounter}"
+			growing="true"
+    		growingThreshold="7"
+    		growingScrollToLoad="false"
+			growingTriggerText=" "
+			>
+            	<StandardListItem
+      			title="Loc.: {location/0/location/reference}"
+      			description="Room/Bed: {location/0/location/display}"
+				/>
             </List>
 		</content>
 		<footer>

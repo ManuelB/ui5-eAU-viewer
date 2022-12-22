@@ -35,6 +35,11 @@ sap.ui.define([
 			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("encountersTileInfo", [iNumberOfEncounters]));
 			this.oRouter.navTo("encountersRoute");
 		},
+		onMyObservationsTilePress: function(oEvent) {
+			var iNumberOfObservations = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
+			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("observationsTileInfo", [iNumberOfObservations]));
+			this.oRouter.navTo("observationsRoute");
+		},
 
 		onMessagePopoverPress : function (oEvent) {
 			this._getMessagePopover().openBy(oEvent.getSource());

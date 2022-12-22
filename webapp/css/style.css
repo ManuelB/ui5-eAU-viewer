@@ -29,3 +29,7 @@ section {
 #bx2 {
     align-content: center;
 }
+
+#healthComponentContainer-healthComponent---home--myPatientsTile {
+    border: 2px solid green;
+}

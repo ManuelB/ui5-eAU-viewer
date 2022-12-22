@@ -3,7 +3,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 			<Toolbar>
-				<Title text="Search for a String in the patient's data here (loading time 30 sec.): "/>
+				<Title text="Search for a text in the patient's data here (loading time 30 sec.): "/>
 				<ToolbarSpacer />
 				<SearchField id="searchField" search=".onSearchPatients" width="50%"/>
 			</Toolbar>
@@ -12,7 +12,7 @@
 			headerText="{i18n>patientsTitle}" 
 			items="{/Patient}" 
 			itemPress="onPressPatient">
-                <StandardListItem title="{name/[use=official]/family}" type="Navigation"/>
+                <StandardListItem title="Id:{id} - Name:{name/[use=official]/given} {name/[use=official]/family}" type="Navigation"/>
             </List>
 		</content>
 		<footer>

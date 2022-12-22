@@ -1,12 +1,12 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
-    controllerName="myhealthapp.controller.Encounters"
+    controllerName="myhealthapp.controller.Observations"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}" showNavButton="true" navButtonPress="onNavBack">
 		<content>
-			<List id="encountersList" 
-			headerText="{i18n>encountersTitle}" 
-			items="{/Encounter}">
-                <StandardListItem title="Reference: {location/0/location/reference} - Bed: {location/0/location/display}" type="Navigation"/>
+			<List id="observationsList" 
+			headerText="{i18n>observationsTitle}" 
+			items="{/Observation}">
+                <StandardListItem title="Id:{id} - Observation: {_history/1/valueString}"/>
             </List>
 		</content>
 		<footer>

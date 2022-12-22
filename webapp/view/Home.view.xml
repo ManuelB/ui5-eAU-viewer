@@ -3,7 +3,7 @@
 	<Page title="{i18n>title}">
 		<content>
 			<HBox alignItems="block">
-				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Patients Management" press="onMyPatientsTilePress">
+				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Patients Management (edit)" press="onMyPatientsTilePress">
 					<TileContent unit="Patients">
 						<NumericContent value="{%total%}" icon="sap-icon://account"/>
 					</TileContent>

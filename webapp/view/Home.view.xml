@@ -3,40 +3,21 @@
 	<Page title="{i18n>title}">
 		<content>
 			<HBox alignItems="block">
-				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Patients Management (edit)" press="onMyPatientsTilePress">
+				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht eAU" press="onMyPatientsTilePress">
 					<TileContent unit="Patients">
 						<NumericContent value="{%total%}" icon="sap-icon://account"/>
 					</TileContent>
 				</GenericTile>
-				<GenericTile id="myOrganizationsTile" binding="{/Organization}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Health Organizations" press="onMyOrganzationsTilePress">
-					<TileContent unit="Organizations">
-						<NumericContent value="{%total%}" icon="sap-icon://org-chart"/>
-					</TileContent>
-				</GenericTile>
-				<GenericTile id="myEncountersTile" binding="{/Encounter}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Encounters with Patients" press="onMyEncountersTilePress">
-					<TileContent unit="Encounters">
-						<NumericContent value="{%total%}" icon="sap-icon://stethoscope"/>
-					</TileContent>
-				</GenericTile>
-				<GenericTile id="myObservationsTile" binding="{/Observation}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header="Patient Observations" press="onMyObservationsTilePress">
-					<TileContent unit="Observations">
-						<NumericContent value="{%total%}" icon="sap-icon://stethoscope"/>
-					</TileContent>
-				</GenericTile>
-				<Image src="../img/ui5FIHR.png" width="{300}" />
+				<Image src="" width="{300}" />
 			</HBox>
 			<VBox id="bx2">
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
-				<Image src="../img/lgs_transpa.png" width="{300}" />
+				<Image src="" width="{300}" />
 			</VBox>
 		</content>
 		<footer>
 			<OverflowToolbar id="overflowToolbar">
-			 	<Button id="btn_messagePopover"
-                        icon="sap-icon://alert"
-                        text="{=${messageModel>/}.length}"
-                        press="onMessagePopoverPress" />
             	<Label text="{i18n>homeFooterText}"/>				
 			</OverflowToolbar>
 		</footer>

@@ -1,6 +1,6 @@
 # OpenUI5-eAU Viewer
 
-This project describes how to use the famous *OpenUI5-FHIR* project to build beautiful Fiori look and feel UI5 applications based on services using the [FHIR®](https://www.hl7.org/fhir/index.html) protocol.
+System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
 
 
 ## Prerequisites

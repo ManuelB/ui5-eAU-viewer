@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/IconPool"
-], function(Controller) {
+	"sap/ui/core/IconPool",
+	"/libs/openpgp"
+], function(Controller, openpgpjs) {
 	"use strict";
 
 	return Controller.extend("myhealthapp.controller.Home", {

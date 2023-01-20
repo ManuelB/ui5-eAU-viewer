@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+<script type="module" src="./pkijsbundle.js"></script>
+<script>
+var client = new XMLHttpRequest();
+client.open('GET', './dec.p7s');
+client.onreadystatechange = function() {
+  alert(client.responseText);
+  let decoded = client.responseText;
+}
+client.send();
+</script>
+</head>
+<body>
+
+hello world
+</body>
+</html>

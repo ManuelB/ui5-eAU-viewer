@@ -2,14 +2,20 @@
 <head>
 <script type="module" src="./pkijsbundle.js"></script>
 <script>
+let eAUString = "";
+let decoded = "";
 var client = new XMLHttpRequest();
-client.open('GET', './dec.p7s');
+client.open('GET', './EAU0.p7s');
 client.onreadystatechange = function() {
-  alert(client.responseText);
-  let decoded = client.responseText;
+  //alert(client.responseText);
+  eAUString = client.responseText;
+  decoded = atob(eAUString);
 }
 client.send();
 </script>
+
+</script>
+
 </head>
 <body>
 

@@ -20,7 +20,10 @@ return xhttp.responseXML;
 
 function displayResult()
 {
-xml = loadXMLDoc("bundle.xml");
+
+parser = new DOMParser();
+text = localStorage.getItem("bundle");
+xml = parser.parseFromString(text,"text/xml");
 xsl = loadXMLDoc("eAU_styles.xsl");
 // code for IE
 if (window.ActiveXObject || xhttp.responseType == "msxml-document")

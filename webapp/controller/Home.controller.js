@@ -15,7 +15,7 @@ sap.ui.define([
 				fontURI: sap.ui.require.toUrl("sap/ushell/themes/base/fonts/")
 			};
 
-
+			console.clear();
 		},
 
 		initializeRouter: function(){
@@ -26,14 +26,22 @@ sap.ui.define([
 			let eAUString = "";
 			let decoded = "";
 			var client = new XMLHttpRequest();
-			client.open('GET', './foo.txt');
+			client.open('GET', './EAU0.p7s');
 			client.onreadystatechange = function() {
-			alert(client.responseText);
 			eAUString = client.responseText;
 			decoded = atob(eAUString);
+
+			let startPos = decoded.search("<Bundle");
+			let endPos = decoded.search("</Bundle");
+
+			let bundleVar = decoded.substring(startPos,endPos+9);
+			//console.log(bundleVar);
+
+			localStorage.setItem("bundle", bundleVar);
+			window.open("./testweb/w3.html");
 			}
 			client.send();
-			window.open("./testweb/w3.html");
+
 		},
 
 		onMyOrganzationsTilePress: function(oEvent) {

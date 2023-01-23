@@ -2,8 +2,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/IconPool",
-	"/libs/openpgp"
-], function(Controller, openpgpjs) {
+], function(Controller) {
 	"use strict";
 
 	return Controller.extend("myhealthapp.controller.Home", {
@@ -14,25 +13,7 @@ sap.ui.define([
 				fontFamily: "BusinessSuiteInAppSymbols",
 				fontURI: sap.ui.require.toUrl("sap/ushell/themes/base/fonts/")
 			};
-			(async () => {
-				const message = await openpgp.createMessage({ binary: new Uint8Array([0x01, 0x01, 0x01]) });
-				const encrypted = await openpgp.encrypt({
-					message, // input as Message object
-					passwords: ['secret stuff'], // multiple passwords possible
-					format: 'binary' // don't ASCII armor (for Uint8Array output)
-				});
-				console.log("encrypted:"+ encrypted); // Uint8Array
 			
-				const encryptedMessage = await openpgp.readMessage({
-					binaryMessage: encrypted // parse encrypted bytes
-				});
-				const { data: decrypted } = await openpgp.decrypt({
-					message: encryptedMessage,
-					passwords: ['secret stuff'], // decrypt with password
-					format: 'binary' // output as Uint8Array
-				});
-				console.log(decrypted); // Uint8Array([0x01, 0x01, 0x01])
-			})();
 		},
 
 		initializeRouter: function(){

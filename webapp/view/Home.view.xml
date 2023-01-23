@@ -15,6 +15,7 @@
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
 			</VBox>
+			<Button text="Upload" type="Accept" press="onUploadFile"/>
 		</content>
 		<footer>
 			<OverflowToolbar id="overflowToolbar">

@@ -2,7 +2,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/IconPool",
-], function(Controller) {
+	"/libs/openpgp"
+], function(Controller, openpgpjs) {
 	"use strict";
 
 	return Controller.extend("myhealthapp.controller.Home", {
@@ -13,7 +14,8 @@ sap.ui.define([
 				fontFamily: "BusinessSuiteInAppSymbols",
 				fontURI: sap.ui.require.toUrl("sap/ushell/themes/base/fonts/")
 			};
-			
+
+
 		},
 
 		initializeRouter: function(){
@@ -21,9 +23,17 @@ sap.ui.define([
 		},
 
 		onMyPatientsTilePress: function(oEvent) {
-			var iNumberOfPatients = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
-			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("patientsTileInfo", [iNumberOfPatients]));
-			this.oRouter.navTo("patientsRoute");
+			let eAUString = "";
+			let decoded = "";
+			var client = new XMLHttpRequest();
+			client.open('GET', './foo.txt');
+			client.onreadystatechange = function() {
+			alert(client.responseText);
+			eAUString = client.responseText;
+			decoded = atob(eAUString);
+			}
+			client.send();
+			window.open("./testweb/w3.html");
 		},
 
 		onMyOrganzationsTilePress: function(oEvent) {

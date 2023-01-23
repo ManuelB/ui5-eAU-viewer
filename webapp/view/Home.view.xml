@@ -4,9 +4,6 @@
 		<content>
 			<HBox alignItems="block">
 				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht eAU" press="onMyPatientsTilePress">
-					<TileContent unit="Patients">
-						<NumericContent value="{%total%}" icon="sap-icon://account"/>
-					</TileContent>
 				</GenericTile>
 				<Image src="" width="{300}" />
 			</HBox>
@@ -15,7 +12,6 @@
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
 			</VBox>
-			<Button text="Upload" type="Accept" press="onUploadFile"/>
 		</content>
 		<footer>
 			<OverflowToolbar id="overflowToolbar">

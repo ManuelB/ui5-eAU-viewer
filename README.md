@@ -27,7 +27,7 @@ Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu
 
 # Bildschirmansichten
 
-![image](https://user-images.githubusercontent.com/34131550/214338104-7aa57548-ecfa-49f7-83af-b3d3842a0bd2.png)
+Hauptbildschirm:
 
 
 Die vier verschiedenen Ansichten einer einzigen Datei sehen anhand dieses Musters wie folgt aus:

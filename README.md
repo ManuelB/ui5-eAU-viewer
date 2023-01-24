@@ -1,6 +1,7 @@
 # OpenUI5-eAU Viewer
 
 System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
+Eine Anwendung im SAP OpenUI5 Format
 
 (Die Dokumentation dieses Systems ist auf Deutsch, da es sich um eine deutschlandspezifische Bescheinigung handelt)
 
@@ -21,6 +22,7 @@ Eine einzige Datei enthaelt also 5 Teileinheiten
 * Fassung fuer den Arbeitgeber
 * Fassung fuer den Versicherten
 * Fassung fuer die Krankenkasse
+* Stornierungsanforderung um die eAU wieder ungueltig zu machen
 * Signatur zur Authentizitaetsgarantie
 
 Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhalts. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.

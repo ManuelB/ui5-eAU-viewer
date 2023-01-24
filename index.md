@@ -1,123 +1,44 @@
----
-layout: default
----
+# OpenUI5-eAU Viewer
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
+Eine Anwendung im SAP OpenUI5 Format
 
-[Link to another page](./another-page.html).
+(Die Dokumentation dieses Systems ist auf Deutsch, da es sich um eine deutschlandspezifische Bescheinigung handelt)
 
-There should be whitespace between paragraphs.
+# Einleitung
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Bei Arbeitsunfaehigkietsbescheinigungen handelt es sich um hoch persoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten bescheinigen.
 
-# Header 1
+Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments im elektronischen Transportweg gab.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Diese Dateien haben die Dateiendung .p7s oder zweckidentisch .p7b
 
-## Header 2
+Es handelt sich hierbei um ein Buendel aus Patienteninformationen und begleitender Digitalsignatur vereint in einer einzelnen Datei
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Das vorliegende System kann diese .p7s / .p7b in vier verschiedenen Fassungen darstellen.
 
-### Header 3
+Eine einzige Datei enthaelt also 5 Teileinheiten
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+* Fassung fuer den Arbeitgeber
+* Fassung fuer den Versicherten
+* Fassung fuer die Krankenkasse
+* Stornierungsanforderung um die eAU wieder ungueltig zu machen
+* Signatur zur Authentizitaetsgarantie
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhalts. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.
 
-#### Header 4
+# Bildschirmansichten
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+Hauptbildschirm:
 
-##### Header 5
+![Auswahl](https://user-images.githubusercontent.com/34131550/214343713-5ea7483c-a970-472b-9bf4-71dd25f881cc.png)
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+Die vier verschiedenen Ansichten einer einzigen Datei sehen anhand dieses Musters wie folgt aus:
 
-###### Header 6
+![arbeitgeber](https://user-images.githubusercontent.com/34131550/214343793-029c1a1f-6209-4e96-a3ec-97ae7721f769.png)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+![Krankenkasse](https://user-images.githubusercontent.com/34131550/214343833-0f13d1a5-1253-490e-b5f6-49ca56278ed7.png)
 
-### There's a horizontal rule below this.
+![Versicherter](https://user-images.githubusercontent.com/34131550/214343878-a881f463-2b58-47ba-94a0-7f017ab3f28b.png)
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+![Stornierung](https://user-images.githubusercontent.com/34131550/214343908-aae2ac70-8e13-4e14-9132-74257387f3d3.png)

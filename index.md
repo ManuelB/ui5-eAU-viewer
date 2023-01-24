@@ -1,4 +1,4 @@
-# Viewer fuer eAU Dateien
+# Universalviewer fuer eAU Dateien
 
 System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
 
@@ -26,7 +26,7 @@ Eine einzige Datei enthaelt also 5 Teileinheiten
 * Stornierungsanforderung um die eAU wieder ungueltig zu machen
 * Signatur zur Authentizitaetsgarantie
 
-Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhaltes. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.
+Hinweis: Normalerweise besteht nur die Anforderung eAU Dateien zu erzeugen, zu signieren und zu versenden. Da signierte Dateien nach ihrer Erstellung nur maschinell lesbar sind, ist der Hauptzweck dieses Universalviewers eAU Dateien wieder menschlich lesbar zu machen. Die Umwandlung erfolgt bisher ohne Signaturpruefung. Der Besitz einer eAU Datei reicht also aus, um diese in allen vier Fassungen ansehen zu koennen und macht diesen Viewer daher sehr universell.
 
 # Bildschirmansichten
 

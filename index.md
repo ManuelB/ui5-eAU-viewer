@@ -26,7 +26,7 @@ Eine einzige Datei enthaelt also 5 Teileinheiten
 * Stornierungsanforderung um die eAU wieder ungueltig zu machen
 * Signatur zur Authentizitaetsgarantie
 
-Hinweis: Normalerweise besteht nur die Anforderung eAU Dateien zu erzeugen, zu signieren und zu versenden. Da signierte Dateien nach ihrer Erstellung nur maschinell lesbar sind, ist der Hauptzweck dieses Universalviewers eAU Dateien wieder menschlich lesbar zu machen. Die Umwandlung erfolgt bisher ohne Signaturpruefung. Der Besitz einer eAU Datei reicht also aus, um diese in allen vier Fassungen ansehen zu koennen und macht diesen Viewer daher sehr universell.
+Hinweis: Normalerweise besteht nur die Anforderung eAU Dateien zu erzeugen, zu signieren und zu versenden. Da signierte Dateien nach ihrer Erstellung nur maschinell lesbar sind, ist der Hauptzweck dieses Universalviewers eAU Dateien wieder menschlich lesbar zu machen. Die Umwandlung erfolgt bisher ohne Signaturpruefung. Der Besitz einer eAU Datei reicht also aus, um diese in allen vier Fassungen ansehen zu koennen und macht diesen Viewer daher sehr universell. Modifikation einer bereits bestehenden Datei oder deren Signatur sind im Viewer nicht vorgesehen.
 
 # Bildschirmansichten
 

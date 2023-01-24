@@ -10,7 +10,7 @@ Eine Anwendung im SAP OpenUI5 Format
 
 Bei Arbeitsunfaehigkeitsbescheinigungen handelt es sich um hochpersoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten begleiten.
 
-Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments im elektronischen Transportweg gab.
+Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments auf dem elektronischen Transportweg gab.
 
 Diese Dateien haben die Dateiendung .p7s oder zweckidentisch .p7b
 

@@ -25,6 +25,9 @@ Eine einzige Datei enthaelt also 5 Teileinheiten
 
 Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhalts. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.
 
+# Bildschirmansichten
+
 ![image](https://user-images.githubusercontent.com/34131550/214338104-7aa57548-ecfa-49f7-83af-b3d3842a0bd2.png)
+
 
 Die vier verschiedenen Ansichten einer einzigen Datei sehen anhand dieses Musters wie folgt aus:

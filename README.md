@@ -29,5 +29,14 @@ Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu
 
 Hauptbildschirm:
 
+![Auswahl](https://user-images.githubusercontent.com/34131550/214343713-5ea7483c-a970-472b-9bf4-71dd25f881cc.png)
 
 Die vier verschiedenen Ansichten einer einzigen Datei sehen anhand dieses Musters wie folgt aus:
+
+![arbeitgeber](https://user-images.githubusercontent.com/34131550/214343793-029c1a1f-6209-4e96-a3ec-97ae7721f769.png)
+
+![Krankenkasse](https://user-images.githubusercontent.com/34131550/214343833-0f13d1a5-1253-490e-b5f6-49ca56278ed7.png)
+
+![Versicherter](https://user-images.githubusercontent.com/34131550/214343878-a881f463-2b58-47ba-94a0-7f017ab3f28b.png)
+
+![Stornierung](https://user-images.githubusercontent.com/34131550/214343908-aae2ac70-8e13-4e14-9132-74257387f3d3.png)

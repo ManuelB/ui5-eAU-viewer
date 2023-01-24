@@ -8,7 +8,7 @@ Eine Anwendung im SAP OpenUI5 Format
 
 # Beschreibung
 
-Bei Arbeitsunfaehigkeitsbescheinigungen handelt es sich um hoch persoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten begleiten.
+Bei Arbeitsunfaehigkeitsbescheinigungen handelt es sich um hochpersoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten begleiten.
 
 Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments im elektronischen Transportweg gab.
 
@@ -26,7 +26,7 @@ Eine einzige Datei enthaelt also 5 Teileinheiten
 * Stornierungsanforderung um die eAU wieder ungueltig zu machen
 * Signatur zur Authentizitaetsgarantie
 
-Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhalts. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.
+Hinweis: Normalerweise besteht nur die Anforderung diese Dateien zu erzeugen, zu signieren und zu versenden. Bei diesem Viewer koennen also beliebige eAUs angezeigt werden. Die Anzeige erfolgt *immer*, unabhaengig von einer korrekten oder inkorrekten Signatur und unabhaengig vom Verfasser. Signierte Dateien koennen nur von Maschinen gelesen werden. Hauptzweck ist die Sichtbarmachung der maschinell erzeugten Dateien z.B. zur Ueberpruefung deren Inhaltes. Weiterhin besteht keinerlei Moeglichkeit die Inhalte oder die Signatur der bereits bestehenden Datei abzuaendern.
 
 # Bildschirmansichten
 

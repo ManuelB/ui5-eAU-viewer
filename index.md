@@ -1,4 +1,4 @@
-# OpenUI5-eAU Viewer
+# Viewer fuer eAU Dateien
 
 System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
 
@@ -6,9 +6,9 @@ Eine Anwendung im SAP OpenUI5 Format
 
 (Die Dokumentation dieses Systems ist auf Deutsch, da es sich um eine deutschlandspezifische Bescheinigung handelt)
 
-# Einleitung
+# Beschreibung
 
-Bei Arbeitsunfaehigkietsbescheinigungen handelt es sich um hoch persoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten bescheinigen.
+Bei Arbeitsunfaehigkeitsbescheinigungen handelt es sich um hoch persoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten begleiten.
 
 Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments im elektronischen Transportweg gab.
 

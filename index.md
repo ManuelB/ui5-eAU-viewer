@@ -1,6 +1,7 @@
 # OpenUI5-eAU Viewer
 
 System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
+
 Eine Anwendung im SAP OpenUI5 Format
 
 (Die Dokumentation dieses Systems ist auf Deutsch, da es sich um eine deutschlandspezifische Bescheinigung handelt)

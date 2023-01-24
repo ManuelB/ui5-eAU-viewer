@@ -2,15 +2,24 @@
 
 System zur visuellen Darstellung elektronisch signierter Arbeitsunfähigkeitsbescheinigungsdateien (.p7b und .p7s)
 
+(Die Dokumentation dieses Systems ist auf Deutsch, da es sich um eine deutschlandspezifische Bescheinigung handelt)
 
-## Prerequisites
-- Download and install [node.js](https://nodejs.org/en/download/)
+# Einleitung
 
-## Getting started
-To run the application execute following steps:
-1. Clone the repository
-2. Open a command prompt/bash
-3. Navigate to the repository-folder
-4. Execute `npm install`
-5. Execute `npm run serve`
-6. Open a browser on http://localhost:8080/index.html
+Bei Arbeitsunfaehigkietsbescheinigungen handelt es sich um hoch persoenliche, medizinische Dokumente die die Berufsbeziehung und die Sozialleistungen des Patienten bescheinigen.
+
+Aus diesem Grund werden die abgekuerzt geschriebenen eAU's digital signiert. Die digitale Signatur bescheinigt, dass das Dokument wirklich von dem angegebenen Verfasser stammt und dass es keinerlei Alterationen des Originaldokuments im elektronischen Transportweg gab.
+
+Diese Dateien haben die Dateiendung .p7s oder zweckidentisch .p7b
+
+Es handelt sich hierbei um ein Buendel aus Patienteninformationen und begleitender Digitalsignatur vereint in einer einzelnen Datei
+
+Das vorliegende System kann diese .p7s / .p7b in vier verschiedenen Fassungen darstellen.
+
+Eine einzige Datei enthaelt also 5 Teileinheiten
+
+* Fassung fuer den Arbeitgeber
+* Fassung fuer den Versicherten
+* Fassung fuer die Krankenkasse
+* Signatur zur Authentizitaetsgarantie
+

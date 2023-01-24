@@ -3,7 +3,13 @@
 	<Page title="{i18n>title}">
 		<content>
 			<HBox alignItems="block">
-				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht eAU" press="onMyPatientsTilePress">
+				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Versicherter" press="eauPress">
+				</GenericTile>
+				<GenericTile id="AGTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Arbeitgeber" press="onAGPress">
+				</GenericTile>
+				<GenericTile id="KrKaTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Krankenkasse" press="onKrKaPress">
+				</GenericTile>
+				<GenericTile id="StornoTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Stornierung" press="onStornoPress">
 				</GenericTile>
 				<Image src="" width="{300}" />
 			</HBox>

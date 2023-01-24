@@ -2,8 +2,7 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/core/IconPool",
-	"/libs/openpgp"
-], function(Controller, openpgpjs) {
+], function(Controller) {
 	"use strict";
 
 	return Controller.extend("myhealthapp.controller.Home", {
@@ -22,7 +21,51 @@ sap.ui.define([
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 		},
 
-		onMyPatientsTilePress: function(oEvent) {
+		eauPress: function(oEvent) {
+			let eAUString = "";
+			let decoded = "";
+			var client = new XMLHttpRequest();
+			client.open('GET', './EAU0.p7s');
+			client.onreadystatechange = function() {
+			eAUString = client.responseText;
+			decoded = atob(eAUString);
+
+			let startPos = decoded.search("<Bundle");
+			let endPos = decoded.search("</Bundle");
+
+			let bundleVar = decoded.substring(startPos,endPos+9);
+			//console.log(bundleVar);
+
+			localStorage.setItem("choice", "eau");
+			localStorage.setItem("bundle", bundleVar);
+			}
+			client.send();
+			window.setTimeout(window.open("./testweb/w3.html"),1000);
+		},
+
+		onAGPress: function(oEvent) {
+			let eAUString = "";
+			let decoded = "";
+			var client = new XMLHttpRequest();
+			client.open('GET', './EAU0.p7s');
+			client.onreadystatechange = function() {
+			eAUString = client.responseText;
+			decoded = atob(eAUString);
+
+			let startPos = decoded.search("<Bundle");
+			let endPos = decoded.search("</Bundle");
+
+			let bundleVar = decoded.substring(startPos,endPos+9);
+			//console.log(bundleVar);
+
+			localStorage.setItem("choice", "AG");
+			localStorage.setItem("bundle", bundleVar);
+			}
+			client.send();
+			window.setTimeout(window.open("./testweb/w3.html"),1000);
+		},
+
+		onKrKaPress: function(oEvent) {
 			let eAUString = "";
 			let decoded = "";
 			var client = new XMLHttpRequest();
@@ -38,27 +81,55 @@ sap.ui.define([
 			//console.log(bundleVar);
 
 			localStorage.setItem("bundle", bundleVar);
-			window.open("./testweb/w3.html");
+			localStorage.setItem("choice", "KraKa");
 			}
 			client.send();
+			window.setTimeout(window.open("./testweb/w3.html"),1000);
 
 		},
 
-		onMyOrganzationsTilePress: function(oEvent) {
-			var iNumberOfOrganizations = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
-			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("organzationsTileInfo", [iNumberOfOrganizations]));
-			this.oRouter.navTo("organizationsRoute");
+		onStornoPress: function(oEvent) {
+			let eAUString = "";
+			let decoded = "";
+			var client = new XMLHttpRequest();
+			client.open('GET', './EAU0.p7s');
+			client.onreadystatechange = function() {
+			eAUString = client.responseText;
+			decoded = atob(eAUString);
+
+			let startPos = decoded.search("<Bundle");
+			let endPos = decoded.search("</Bundle");
+
+			let bundleVar = decoded.substring(startPos,endPos+9);
+			//console.log(bundleVar);
+
+			localStorage.setItem("bundle", bundleVar);
+			localStorage.setItem("choice", "Storno");
+			}
+			client.send();
+			window.setTimeout(window.open("./testweb/w3.html"),1000);
 		},
 
-		onMyEncountersTilePress: function(oEvent) {
-			var iNumberOfEncounters = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
-			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("encountersTileInfo", [iNumberOfEncounters]));
-			this.oRouter.navTo("encountersRoute");
-		},
-		onMyObservationsTilePress: function(oEvent) {
-			var iNumberOfObservations = oEvent.getSource().getTileContent()[0].getContent().getValue() || 0;
-			sap.m.MessageToast.show(this.getView().getModel("i18n").getResourceBundle().getText("observationsTileInfo", [iNumberOfObservations]));
-			this.oRouter.navTo("observationsRoute");
+		onVPress: function(oEvent) {
+			let eAUString = "";
+			let decoded = "";
+			var client = new XMLHttpRequest();
+			client.open('GET', './EAU0.p7s');
+			client.onreadystatechange = function() {
+			eAUString = client.responseText;
+			decoded = atob(eAUString);
+
+			let startPos = decoded.search("<Bundle");
+			let endPos = decoded.search("</Bundle");
+
+			let bundleVar = decoded.substring(startPos,endPos+9);
+			//console.log(bundleVar);
+
+			localStorage.setItem("bundle", bundleVar);
+			localStorage.setItem("choice", "Vers");
+			}
+			client.send();
+			window.setTimeout(window.open("./testweb/w3.html"),1000);
 		},
 
 		onMessagePopoverPress : function (oEvent) {

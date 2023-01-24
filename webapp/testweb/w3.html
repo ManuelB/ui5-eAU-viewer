@@ -23,8 +23,17 @@ function displayResult()
 
 parser = new DOMParser();
 text = localStorage.getItem("bundle");
+
 xml = parser.parseFromString(text,"text/xml");
-xsl = loadXMLDoc("eAU_styles.xsl");
+
+
+let choice = localStorage.getItem("choice");
+if (choice == "eau") xsl = loadXMLDoc("eAU_styles.xsl");
+if (choice == "AG") xsl = loadXMLDoc("EAU_Stylesheet_AG.xslt");
+if (choice == "KraKa") xsl = loadXMLDoc("EAU_Stylesheet_KK.xslt");
+if (choice == "Storno") xsl = loadXMLDoc("EAU_Stylesheet_Storno.xslt");
+if (choice == "Vers") xsl = loadXMLDoc("EAU_Stylesheet_V.xslt");
+
 // code for IE
 if (window.ActiveXObject || xhttp.responseType == "msxml-document")
   {

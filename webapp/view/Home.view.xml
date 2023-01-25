@@ -29,7 +29,7 @@
 					uploadComplete="handleUploadComplete"/>
 				<Button
 					text="Upload File"
-					press="handleUploadPress"/>
+					press="onUploadCSVFile"/>
 				<Image src="" width="{300}" />
 			</VBox>
 		</content>

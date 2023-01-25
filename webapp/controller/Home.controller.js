@@ -21,6 +21,20 @@ sap.ui.define([
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 		},
 
+		onUploadCSVFile: function (oEvent) {
+
+			var oFileUploader = this.byId("fileUploader");
+			var domRef = oFileUploader.getFocusDomRef();
+			var file = domRef.files[0];
+			
+			const oReader = new FileReader();
+			oReader.readAsText(file);
+			oReader.onload = function (e) {
+				console.log(e.target.result);
+			}
+		},
+
+
 		eauPress: function(oEvent) {
 			let eAUString = "";
 			let decoded = "";

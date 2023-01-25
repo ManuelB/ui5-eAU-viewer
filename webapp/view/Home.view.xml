@@ -11,11 +11,14 @@
 				</GenericTile>
 				<GenericTile id="StornoTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Stornierung" press="onStornoPress">
 				</GenericTile>
-				<Image src="" width="{300}" />
 			</HBox>
 			<VBox id="bx2">
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
+				<Image src="" width="{300}" />
+				<Button
+					text="Upload File"
+					press="handleUploadPress"/>
 				<Image src="" width="{300}" />
 			</VBox>
 		</content>

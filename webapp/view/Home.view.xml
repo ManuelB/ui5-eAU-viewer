@@ -1,4 +1,9 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="myhealthapp.controller.Home"
+<mvc:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+		xmlns:l="sap.ui.layout"
+		xmlns:u="sap.ui.unified"
+	controllerName="myhealthapp.controller.Home"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}">
 		<content>
@@ -16,6 +21,12 @@
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
+				<u:FileUploader
+					id="fileUploader"
+					name="myFileUpload"
+					uploadUrl="./upload"
+					tooltip="Upload your file to the local server"
+					uploadComplete="handleUploadComplete"/>
 				<Button
 					text="Upload File"
 					press="handleUploadPress"/>

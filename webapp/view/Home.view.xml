@@ -7,7 +7,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}">
 		<content>
-			<HBox alignItems="block">
+			<HBox alignItems="block" id="mainButtons">
 				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Versicherter" press="eauPress">
 				</GenericTile>
 				<GenericTile id="AGTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Arbeitgeber" press="onAGPress">
@@ -17,7 +17,7 @@
 				<GenericTile id="StornoTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Stornierung" press="onStornoPress">
 				</GenericTile>
 			</HBox>
-			<VBox id="bx2">
+			<VBox id="fileUlBox">
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
@@ -25,10 +25,12 @@
 					id="fileUploader"
 					name="myFileUpload"
 					uploadUrl="./upload"
-					tooltip="Upload your file to the local server"
+					tooltip="Datei einlesen"
+					buttonText="durchsuchen..."
+					fileType="p7s,p7b"
 					uploadComplete="handleUploadComplete"/>
 				<Button
-					text="Upload File"
+					text="eAU Datei einlesen"
 					press="onUploadCSVFile"/>
 				<Image src="" width="{300}" />
 			</VBox>

@@ -1,3 +1,0 @@
-<ui:FileUploader id="fileUploaderFS" multiple="false" />
-
- <Button text="Upload" type="Accept" press="onUploadFile"/>

@@ -41,3 +41,13 @@ section {
     color:gray;
     padding-left:8px;
 }
+#healthComponentContainer-healthComponent---home--mainButtons {
+    display:none;
+}
+.showBtn {
+    display:flex !important;
+}
+
+.hideFileLoad {
+    display:none;
+}

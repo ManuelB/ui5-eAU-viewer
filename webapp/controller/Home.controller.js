@@ -46,7 +46,7 @@ sap.ui.define([
 			}
 			
 			const oReader = new FileReader();
-			oReader.readAsText(file);
+			oReader.readAsText(file,'UTF-8');
 			oReader.onload = function (e) {
 				//console.log(e.target.result);
 				let eAUString = e.target.result;

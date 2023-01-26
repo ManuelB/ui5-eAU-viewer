@@ -25,14 +25,14 @@
 				<Text text=" " />
 				<Text text=" " />
 					<Button class="otherf"
-					text="andere Datei auswaehlen"
+					text="andere Datei auswählen"
 					press="otherFile"/>
 			</VBox>
 			<VBox id="fileUlBox" class="ulVBox">
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
-				<Text text="Bitte waehlen sie zunaechst eine eAU Datei aus, die sie betrachten moechten" />
+				<Text text="Bitte wählen sie zunaechst eine eAU Datei aus, die sie betrachten möchten" />
 				<Text text="Die Dateiendung muss .p7b oder .p7s sein." />
 				<Text text=" " />
 				<u:FileUploader

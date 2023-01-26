@@ -7,20 +7,34 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="{i18n>title}">
 		<content>
-			<HBox alignItems="block" id="mainButtons">
-				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Versicherter" press="eauPress">
+			<VBox class="mainButtons" id="mb1">
+				<Text text=" " />
+				<Text text="  Bitte clicken Sie nun auf eine der vier verschiedenen Fassungen:" />
+			</VBox>
+			<HBox alignItems="block" class="mainButtons" id="mb2">
+				<GenericTile id="myPatientsTile" binding="{/Patient}" class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Versicherter      " press="eauPress">
 				</GenericTile>
-				<GenericTile id="AGTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Arbeitgeber" press="onAGPress">
+				<GenericTile id="AGTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Arbeitgeber         " press="onAGPress">
 				</GenericTile>
 				<GenericTile id="KrKaTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Krankenkasse" press="onKrKaPress">
 				</GenericTile>
-				<GenericTile id="StornoTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Stornierung" press="onStornoPress">
+				<GenericTile id="StornoTile"  class="sapUiTinyMarginBegin sapUiTinyMarginTop" header=" Ansicht Stornierung      " press="onStornoPress">
 				</GenericTile>
 			</HBox>
-			<VBox id="fileUlBox">
+			<VBox class="mainButtons mb3" id="mb3">
+				<Text text=" " />
+				<Text text=" " />
+					<Button class="otherf"
+					text="andere Datei auswaehlen"
+					press="otherFile"/>
+			</VBox>
+			<VBox id="fileUlBox" class="ulVBox">
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Text text="" class="sapUiSmallMarginBottom" />
 				<Image src="" width="{300}" />
+				<Text text="Bitte waehlen sie zunaechst eine eAU Datei aus, die sie betrachten moechten" />
+				<Text text="Die Dateiendung muss .p7b oder .p7s sein." />
+				<Text text=" " />
 				<u:FileUploader
 					id="fileUploader"
 					name="myFileUpload"

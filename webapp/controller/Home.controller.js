@@ -23,6 +23,13 @@ sap.ui.define([
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 		},
 
+		otherFile: function () {
+			this.byId('mb1').removeStyleClass("showBtn");
+			this.byId('mb2').removeStyleClass("showBtnFade");
+			this.byId('mb3').removeStyleClass("showBtn");
+			this.byId('fileUlBox').removeStyleClass("hideFileLoad");
+		},
+
 		onUploadCSVFile: function (oEvent) {
 
 			var oFileUploader = this.byId("fileUploader");
@@ -31,7 +38,9 @@ sap.ui.define([
 
 			let chgView = () => {
 				if (localStorage.getItem("bundle").length > 5) {
-					this.byId('mainButtons').addStyleClass("showBtn");
+					this.byId('mb1').addStyleClass("showBtn");
+					this.byId('mb2').addStyleClass("showBtnFade");
+					this.byId('mb3').addStyleClass("showBtn");
 					this.byId('fileUlBox').addStyleClass("hideFileLoad");
 				} 
 			}
@@ -53,27 +62,27 @@ sap.ui.define([
 
 		eauPress: function(oEvent) {
 			localStorage.setItem("choice", "eau");
-			setTimeout(window.open("./testweb/w3.html"),1000);
+			setTimeout(window.open("./xmlViewer/w3.html"),1000);
 		},
 
 		onAGPress: function(oEvent) {
 			localStorage.setItem("choice", "AG");
-			setTimeout(window.open("./testweb/w3.html"),1000);
+			setTimeout(window.open("./xmlViewer/w3.html"),1000);
 		},
 
 		onKrKaPress: function(oEvent) {
 			localStorage.setItem("choice", "KraKa");
-			setTimeout(window.open("./testweb/w3.html"),1000);
+			setTimeout(window.open("./xmlViewer/w3.html"),1000);
 		},
 
 		onStornoPress: function(oEvent) {
 			localStorage.setItem("choice", "Storno");
-			setTimeout(window.open("./testweb/w3.html"),1000);
+			setTimeout(window.open("./xmlViewer/w3.html"),1000);
 		},
 
 		onVPress: function(oEvent) {
 			localStorage.setItem("choice", "Vers");
-			setTimeout(window.open("./testweb/w3.html"),1000);
+			setTimeout(window.open("./xmlViewer/w3.html"),1000);
 		},
 
 		onMessagePopoverPress : function (oEvent) {

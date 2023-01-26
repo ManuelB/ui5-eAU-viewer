@@ -30,24 +30,30 @@ section {
     align-content: center;
 }
 
-#healthComponentContainer-healthComponent---home--myPatientsTile {
-    border: 2px solid green;
-}
-#__text4 {
-    color:gray;
-    padding-left:8px;
-}
-#__text5 {
-    color:gray;
-    padding-left:8px;
-}
-#healthComponentContainer-healthComponent---home--mainButtons {
+.mainButtons {
     display:none;
 }
+.showBtnFade {
+    display:flex !important;
+    animation: fadeIn 4s;
+}
+
 .showBtn {
     display:flex !important;
 }
 
 .hideFileLoad {
     display:none;
+}
+
+.otherf {
+    margin-left:7px;
+}
+
+.ulVBox {
+    margin-left:7px;
+}
+
+.mb3 {
+    opacity: 0.7;
 }

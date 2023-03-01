@@ -47,10 +47,16 @@ sap.ui.define([
 			
 			const oReader = new FileReader();
 			oReader.readAsText(file,'UTF-8');
+
 			oReader.onload = function (e) {
 				//console.log(e.target.result);
 				let eAUString = e.target.result;
-				let decoded = atob(eAUString);
+				let decoded;
+				try {
+					decoded = atob(eAUString);
+				} catch(e) {
+					decoded = eAUString;
+				}
 				let startPos = decoded.search("<Bundle");
 				let endPos = decoded.search("</Bundle");
 				let bundleVar = decoded.substring(startPos,endPos+9);
